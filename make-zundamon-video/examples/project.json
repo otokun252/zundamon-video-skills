@@ -1,0 +1,32 @@
+{
+  "schema_version": 1,
+  "title": "片づけが止まるのは、置き場所が決まっていないから？",
+  "description": "机に物が積み重なる場面を、架空の短い会話で考えます。片づけ方の一例として、戻す場所を先に決める方法を紹介します。\nこのサンプルは再構成版Skillの動作確認用です。",
+  "tags": ["片づけ", "机の整理", "キャラクター解説"],
+  "width": 1280,
+  "height": 720,
+  "fps": 24,
+  "thumbnail": {"lines": ["その山、", "戻す場所は？"]},
+  "characters": {
+    "hero": {"name": "主人公", "role": "protagonist", "voice_name": "ずんだもん", "voice_style": "ノーマル", "color": "#8fcb75"},
+    "friend": {"name": "友人", "role": "support", "voice_name": "四国めたん", "voice_style": "ノーマル", "color": "#eaa4c2"},
+    "clerk": {"name": "店員役", "role": "support", "voice_name": "四国めたん", "voice_style": "ノーマル", "color": "#69bcd5"},
+    "narrator": {"name": "ナレーター", "role": "narrator", "voice_name": "春日部つむぎ", "voice_style": "ノーマル", "color": "#ffd974"}
+  },
+  "scenes": {
+    "desk": {"title": "机の上に、また山ができた", "kind": "cards", "visible": ["hero"], "items": ["本とケーブルが積み重なる"]},
+    "shop": {"title": "収納を買う、その前に", "kind": "cards", "visible": ["hero", "clerk"], "items": ["箱の大きさだけでは決まらない"]},
+    "diagram": {"title": "戻す場所を先に決める", "kind": "steps", "visible": [], "items": ["よく使う物を選ぶ", "手の届く場所を決める", "使ったら戻す"]},
+    "ending": {"title": "まずは、よく使う一つから", "kind": "cards", "visible": ["hero", "friend"], "items": ["自分の机なら、何から始める？"]}
+  },
+  "utterances": [
+    {"speaker": "hero", "scene": "desk", "display_text": "片づけたのに、また机がいっぱいなのだ。", "speech_text": "かたづけたのに、またつくえがいっぱいなのだ。"},
+    {"speaker": "narrator", "scene": "shop", "display_text": "翌日、収納の箱を探しに出かけました。", "speech_text": "よくじつ、しゅうのうのはこをさがしにでかけました。"},
+    {"speaker": "clerk", "scene": "shop", "display_text": "どこに置いて、何を入れますか？", "speech_text": "どこにおいて、なにをいれますか？"},
+    {"speaker": "narrator", "scene": "diagram", "display_text": "戻す場所を決めてから、必要な収納を考えます。", "speech_text": "もどすばしょをきめてから、ひつようなしゅうのうをかんがえます。"},
+    {"speaker": "friend", "scene": "ending", "display_text": "まずは毎日使う、充電器からどう？", "speech_text": "まずはまいにちつかう、じゅうでんきからどう？"},
+    {"speaker": "hero", "scene": "ending", "display_text": "右の引き出しに、戻す場所を作るのだ。", "speech_text": "みぎのひきだしに、もどすばしょをつくるのだ。", "gap_after": 0.6}
+  ],
+  "credits": ["VOICEVOX:ずんだもん", "VOICEVOX:四国めたん", "VOICEVOX:春日部つむぎ", "画面の汎用図形：このサンプルの描画コード"],
+  "assets": []
+}
